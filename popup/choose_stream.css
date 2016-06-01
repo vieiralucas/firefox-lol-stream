@@ -1,0 +1,38 @@
+html, body {
+  margin: 0px;
+  width: 200px;
+  height: 800px;
+}
+
+p {
+  text-align: center;
+}
+
+li {
+  clear: both;
+  list-style: none;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  float: left;
+  width: 32px;
+}
+
+span {
+  float: left;
+  margin: 2px;
+}
+
+.name {
+  width: 100px;
+}
+
+.viewers {
+  width: 60px;
+}
+

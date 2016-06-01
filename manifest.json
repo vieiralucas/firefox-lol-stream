@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Lol Stream Browser",
+  "version": "0.0.0",
+  "description": "An extension to find League of Legends livestreams",
+  "icons": {
+    "48": "icons/lol-stream.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "borderify@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+  "browser_action": {
+    "default_icon": "icon/lol-stream.png",
+    "default_title": "LoL Stream Browser",
+    "default_popup": "popup/choose_stream.html"
+  }
+}
