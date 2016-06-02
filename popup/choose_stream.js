@@ -29,13 +29,19 @@ window.onload = function() {
       ul.innerHTML = streams.map(function(s) {
         return (
           '<li>' +
-            '<a target="_blank" href="' + s.link + '">' +
+            '<a href="' + s.link + '" onclick="closeAddon(this)">' +
               '<img src="' + s.logo + '"/>' +
               '<span class="name">' + s.name + '</span>' +
-              '<span class="viewers">' + s.viewers + '</span>' +
+              '<span class="viewers">' + s.viewers + ' viewers</span>' +
             '</a>' +
           '</li>'
         );
       }).join('');
     });
+}
+
+function closeAddon(a) {
+  chrome.tabs.create({ url: a.getAttribute('href') });
+  window.close();
+  return false;
 }
