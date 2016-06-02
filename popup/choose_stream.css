@@ -1,21 +1,35 @@
 html, body {
   margin: 0px;
-  width: 200px;
+  width: 240px;
   height: 800px;
+  background: #ecf0f1;
 }
 
 p {
   text-align: center;
 }
 
+ul {
+  padding-right: 40px;
+}
+
 li {
+  padding: 5px;
   clear: both;
   list-style: none;
   height: 40px;
 }
+li:hover {
+  background: #95a5a6;
+}
 
 a {
+  color: #34495e;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ecf0f1;
 }
 
 img {
@@ -33,6 +47,6 @@ span {
 }
 
 .viewers {
-  width: 60px;
+  width: 100px;
 }
 
